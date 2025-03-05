@@ -4,7 +4,6 @@ const message = ref("안녕! 나는 vue야");
 const text = ref("💝💩💩");
 const count = ref(0);
 const minus = ref(0);
-
 </script>
 <template>
   <h1>{{ message }}</h1>
