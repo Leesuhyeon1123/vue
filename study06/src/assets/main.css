@@ -1,0 +1,17 @@
+/* main.js으로 꼭 import해주기 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    padding: 5%;
+    max-width: 1200px;
+    margin: auto;
+}
