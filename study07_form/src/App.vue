@@ -3,6 +3,7 @@
 import { ref } from "vue";
 import Form_Ex from "./components/form_Ex.vue";
 import Reservation from "./components/Reservation.vue";
+import OnMounted from "./components/OnMounted.vue";
 const currentPage = ref("");
 console.log(currentPage);
 // showpage를 클릭하면 실행된다
@@ -20,9 +21,12 @@ const showPage = (page) => {
       <!-- form_Ex,Reservation 값을 넣기 -->
       <button @click="showPage('Form_Ex')">폼 예제</button>
       <button @click="showPage('Reservation')">예약신청</button>
+      <button @click="showPage('OnMounted')">OnMounted</button>
     </div>
-    <form_Ex v-if="currentPage === 'Form_Ex'" />
+    <!-- 화면 출력 -->
+    <Form_Ex v-if="currentPage === 'Form_Ex'" />
     <Reservation v-if="currentPage === 'Reservation'" />
+    <OnMounted v-if="currentPage === 'OnMounted'"/>
   </div>
 </template>
 
